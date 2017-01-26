@@ -69,8 +69,30 @@
 
 ## Go and Go Env setup
 
- * Navigate to https://golang.org/dl/.
- * Select the binary distribution for your OS and run the installation program.
- * After you run the installation program, Go will be installed at the following location: /usr/local/go
+### Downloading Go
+
+  * Navigate to https://golang.org/dl/.
+  * Select the binary distribution for your OS and run the installation program.
+  * After you run the installation program, Go will be installed at the following location: /usr/local/go
+  * You know it worked if...
+    * The output of `$ go env` is not an error message.
+
+### Go Workspace
+
+ * Go workspace would be the physical place on the disk to store your Go codes.
+ * It is good practice to maintain one place to load and work on you Go projects.
+ * Create folders named `code/go/src` on your `$HOME` folder: `$ mkdir -p ~/code/go/src`
+ * Update your `.bash_profile` with these enviromental variable:
+   ```
+   $ export GOPATH="$HOME/code/go"
+   $ export GOROOT=/usr/local/opt/go/libexec
+   $ export PATH="$PATH:$GOPATH/bin"
+   $ export PATH="$PATH:$GOROOT/bin"
+   ```
+ * Source you profile: `$ source .bash_profile`
  * You know it worked if...
-     * The output of `$ go env` is not an error message.
+   * The output of `$ go env` includes non empty `GOPATH`.
+
+## Have fun with Go!
+
+![aww yeah](http://i.imgur.com/AmFax.gif)
