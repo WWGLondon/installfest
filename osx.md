@@ -8,7 +8,7 @@
  * You should be able to copy and paste the lines into Terminal.
  * Many instructions start with a dollar sign ($), this is a convention used to indicate a bash/terminal command.
  * We recommend that you configure your system so that you can see both the instructions and Terminal at the same time.
- 
+
 ## What you'll need
 
  * [Editor](##editor)
@@ -36,9 +36,18 @@
 
 ## Homebrew
 
+  * To install this OSX package manager:
+     `$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+  * Ensure that everything is up to date:
+     `$ brew update && brew upgrade`
+  * You know it worked if...
+     * The output of `$ which brew` is `/usr/local/bin/brew`.
+     * The output of `$ brew doctor` is `ready to brew`.
 
 ## Git
 
+  * To install this version control system on your machine: `$ brew install git`
+  * You know it worked if...
+     * The output of `$ git --version` is > 2.0.
 
 ## Go and Go Env setup
- 
