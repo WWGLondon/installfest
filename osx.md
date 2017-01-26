@@ -49,5 +49,28 @@
   * To install this version control system on your machine: `$ brew install git`
   * You know it worked if...
      * The output of `$ git --version` is > 2.0.
+  * Update your Git configuration:
+    ```
+    $ git config --global user.name "Jane Doe"
+    $ git config --global user.email "doe@gmail.com"
+    $ git config --global push.default simple
+    ```
+  * If you don't have a Github account, this is probably the time to do so.
+  * Go to github.com and create an account.
+  * You would then need to generate your ssh key: `$ ssh-keygen -t rsa -C "doe@gmail.com"`
+  * And then copy it to github.com, you can find your key with: `$ atom ~/.ssh/id_rsa.pub`
+  * Don't forget to update your Git configuration (again):
+    ```
+    $ git config --global github.user "Jane Doe"
+    $ git config --global github.token your_token_here
+    ```
+  * You know it worked if...
+     * The output of `$ ssh -T git@github.com` is a full welcome phrase from Github.
 
 ## Go and Go Env setup
+
+ * Navigate to https://golang.org/dl/.
+ * Select the binary distribution for your OS and run the installation program.
+ * After you run the installation program, Go will be installed at the following location: /usr/local/go
+ * You know it worked if...
+     * The output of `$ go env` is not an error message.
