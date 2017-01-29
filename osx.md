@@ -65,7 +65,9 @@
 * Update your Git configuration:
 
   `$ git config --global user.name "FIRSTNAME_SPACE_LASTNAME"`
+
   `$ git config --global user.email "YOUR_EMAIL_ADDRESS"`
+
   `$ git config --global push.default simple`
 
 * If you don't have a Github account, this is probably the time to do so.
@@ -82,6 +84,7 @@
 * Don't forget to update your Git configuration (again):
 
   `$ git config --global github.user "FIRSTNAME_SPACE_LASTNAME"`
+
   `$ git config --global github.token YOUR_TOKEN`
 
 * You know it worked if...
@@ -113,8 +116,11 @@
 * Update your `.bash_profile` with these environment variables:
 
   `$ export GOPATH="$HOME/code/go"`
+
   `$ export GOROOT=/usr/local/go`
+
   `$ export PATH="$PATH:$GOPATH/bin"`
+
   `$ export PATH="$PATH:$GOROOT/bin"`
 
 * Source you profile: `$ source ~/.bash_profile`
