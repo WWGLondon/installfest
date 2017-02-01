@@ -6,7 +6,7 @@
 * We will be installing multiple applications.
 * The installation steps will be provided for each application.
 * You should be able to copy and paste the lines into Terminal.
-* Many instructions start with a dollar sign ($), this is a convention used to indicate a bash/terminal command. (*DO NOT* include the $ sign when you copy & paste the command to your terminal)
+* Many instructions start with a dollar sign (`$`), this is a convention used to indicate a bash/terminal command. (**DO NOT** include the `$` sign when you copy & paste the command to your terminal)
 * Replace anything with capital letters like `YOUR_NAME` with your own credentials.
 * We recommend that you configure your system so that you can see both the instructions and Terminal at the same time.
 
